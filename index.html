@@ -39,7 +39,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
 
         .calculator {
@@ -66,8 +65,6 @@
             padding: 15px;
             margin: 2px;
             font-size: 20px;
-            cursor: pointer;
-            border: none;
             border-radius: 5px;
             background-color: #808080;
             color: #ffffff;
@@ -83,22 +80,22 @@
 
     </style>
 </head>
+
 <body>
+
  <form name="form1">
     <div class="calculator">
         <h2>Simple Calculator</h2>
        
-            <input type="text" name="txtNum1" placeholder="Enter Number" required><br>
-            <input type="text" name="txtNum2" placeholder="Enter Number" required><br>
+            <input type="text" name="txtNum1" placeholder="Enter Number" >
+            <input type="text" name="txtNum2" placeholder="Enter Number" >
             
             <input type="button" value="+" onclick="add()">
             <input type="button" value="-" onclick="sub()">
             <input type="button" value="*" onclick="mult()">
-            <input type="button" value="/" onclick="div()"><br>
+            <input type="button" value="/" onclick="div()">
 
-            <div class="result">
-                <input type="text" name="txtResult" placeholder="Result" readonly>
-            </div>
+            <input type="text" name="txtResult" placeholder="Result" readonly>
         </form>
     </div>
 </body>
