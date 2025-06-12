@@ -2,13 +2,18 @@
 <HTML>
 <title>Project 4</title>
 <script>
-    var count = 0;
+    var count = sessionStorage.getItem("count");
     function inc(){
         count++;
-        document.form1.button1.value = "You clicked me " + count + " times";
+        document.form1.button1.value = "You clicked me " + count + " times!";
+        sessionStorage.setItem('count', count);
         if(count === 10){
             alert("You have clicked the button 10 times!");
         }
+    }
+    window.onload = function(){
+        document.form1.button1.vlaue = "You clicked me " + count + " times!";
+        
     }
 
 </script>
