@@ -1,109 +1,24 @@
 <!DOCTYPE html>
 <HTML>
-<title>Simple Calculator</title>
-<script>
+<title>Project 1</title>
+<body style="background-color:rgb(103, 68, 178);">  
 
-	function add(){
-		var num1,num2;
-		num1 = Number(document.form1.txtNum1.value);
-		num2 = Number(document.form1.txtNum2.value);
-		document.form1.txtResult.value = num1 + num2;
-	}
-	function sub(){
-		var num1,num2;
-		num1 = Number(document.form1.txtNum1.value);
-		num2 = Number(document.form1.txtNum2.value);
-		document.form1.txtResult.value= num1 - num2;
-	}
-	function mult(){
-		var num1,num2;
-		num1 = Number(document.form1.txtNum1.value);
-		num2 = Number(document.form1.txtNum2.value);
-		document.form1.txtResult.value= num1 * num2;
-	}
-	function div(){
-		var num1,num2;
-		num1 = Number(document.form1.txtNum1.value);
-		num2 = Number(document.form1.txtNum2.value);
-		document.form1.txtResult.value= num1 / num2;
-	}
-</script>
+    <h1>Interesting Facts about me: </h1>
+        <ul>
+            <li>I enjoy reading books</li>
+            <li>I don't like tomatoes</li>
+            <li>I try to listen to music at every occasion possible</li>
+            <li>I like playing video games</li>
+            <li>My favorite color is purple</li>
+        </ul>
 
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #808080;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+<br>
+    <h3><u>Links</h3>
+        <ul>
+            <li><a href="myUniversity.html">My University</a></li>
+            <li><a href="myResume.html">Resume</a></li>
+            <li><a href="calculator.html">Simple Calculator</a></li>
+        </ul>
 
-        .calculator {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #d291bc;
-            width: 300px;
-            text-align: center;
-        }
-
-        .result input[type="text"]:hover {
-            cursor: not-allowed
-        }
-
-        input[type="text"] {
-            width: 250px;
-            padding: 10px;
-            margin: 10px;
-            border: 1px solid;
-            border-radius: 5px;
-            font-size: 16px;
-            text-align: right;
-        }
-
-        input[type="button"] {
-            width: 45px;
-            padding: 15px;
-            margin: 2px;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            background-color: #808080;
-            color: #ffffff;
-        }
-
-        input[type="button"]:hover {
-            background-color: #0056b3;
-        }
-
-        h2 {
-            color: #d291bc;
-        }
-        
-
-    </style>
-</head>
-
-<body>
-
- <form name="form1">
-    <div class="calculator">
-        <h2>Simple Calculator</h2>
-       
-            <input type="text" name="txtNum1" placeholder="Enter Number" >
-            <input type="text" name="txtNum2" placeholder="Enter Number" >
-            
-            <input type="button" value="+" onclick="add()">
-            <input type="button" value="-" onclick="sub()">
-            <input type="button" value="*" onclick="mult()">
-            <input type="button" value="/" onclick="div()">
-            
-            <div class="result">
-                <input type="text" name="txtResult" placeholder="Result" readonly>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
+</BODY>
+</HTML>
